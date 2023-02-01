@@ -7,7 +7,8 @@
   transition: all 0.3s;
   list-style: none;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
+  line-height: 23px;
 }
 
 body {
@@ -48,6 +49,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 888;
 }
 header .logo .bar {
   position: absolute;
@@ -69,6 +71,7 @@ header nav {
   margin: auto;
   position: relative;
   top: 50px;
+  border-radius: 10px;
 }
 header nav ul {
   width: 100%;
@@ -103,7 +106,7 @@ header .up_header {
   margin: auto;
 }
 header .up_header img {
-  width: 60px;
+  width: 40px;
   height: auto;
   margin-top: 100px;
   -webkit-box-shadow: 10px #000;
@@ -142,6 +145,45 @@ header .up_header img {
 .who_are_we .article h1 {
   padding: 1rem 0rem;
 }
+.who_are_we .up-two {
+  background-color: #0f0946;
+}
+.who_are_we .up-two h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.who_are_we .up-two .up-cards {
+  width: 90%;
+  min-height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.who_are_we .up-two .up-cards .card {
+  text-align: center;
+  padding: 2rem 0rem;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px solid orange;
+  min-width: 260px;
+  max-width: 30%;
+  height: auto;
+  background-color: rgba(154, 239, 213, 0.5529411765);
+  padding: 0.9rem;
+}
+.who_are_we .up-two .up-cards .card h1, .who_are_we .up-two .up-cards .card p {
+  color: #000;
+}
+.who_are_we .up-two .up-cards .card img {
+  width: 60px;
+  height: auto;
+}
 
 .our_service {
   min-height: 100vh;
@@ -153,20 +195,11 @@ header .up_header img {
 }
 .our_service .up_service {
   width: 90%;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: auto;
-  gap: 1rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  text-align: center;
 }
 .our_service .up_service .card {
   text-align: center;
@@ -177,8 +210,8 @@ header .up_header img {
   min-width: 260px;
   max-width: 30%;
   height: auto;
-  background-color: rgba(154, 239, 214, 0.6862745098);
-  padding: 0.9;
+  background-color: rgba(154, 239, 213, 0.5529411765);
+  padding: 0.9rem;
 }
 .our_service .up_service .card h1, .our_service .up_service .card p {
   color: #000;
@@ -218,7 +251,7 @@ header .up_header img {
 .desing_stage .up_article .card .num {
   padding: 0.3rem;
   margin: 1rem;
-  background-color: #301E67;
+  background-color: #FF9100;
   border-radius: 5px;
 }
 .desing_stage .up_article .card .num img {
@@ -226,43 +259,25 @@ header .up_header img {
   height: auto;
 }
 
-.question {
-  min-height: 70vh;
-  margin-top: 0;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(48, 30, 103, 0.831372549)), to(rgba(12, 51, 83, 0.8666666667))), url("../images/4.jpg");
-  background-image: linear-gradient(right, rgba(48, 30, 103, 0.831372549), rgba(12, 51, 83, 0.8666666667)), url("../images/4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+footer {
+  margin: auto 2rem;
 }
-.question p {
-  text-align: center;
+footer .up-footer {
+  min-height: 60vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.question .up_question {
-  text-align: center;
+footer .up-footer .menu li {
+  margin: 0.4rem 0rem;
 }
-.question .up_question .accordion {
-  background-color: #5B8FB9;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 18px;
-  width: 90%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.1rem;
-  margin: 10px;
-}
-.question .up_question .active, .question .up_question .accordion:hover {
-  background-color: #386183;
-}
-.question .up_question .panel {
-  padding: 20px;
-  display: none;
-  overflow: hidden;
-  width: 90%;
-  margin: auto;
-  font-size: 1.1rem;
+footer .up-footer .logo img {
+  width: 200px;
+  height: auto;
 }
 
 @media screen and (max-width: 903px) {
@@ -358,14 +373,8 @@ header .up_header img {
     width: 90%;
     margin: auto;
   }
-  header .up_header img {
-    width: 30%;
-    height: auto;
-    -webkit-box-shadow: 10px #000;
-            box-shadow: 10px #000;
-  }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 760px) {
   .who_are_we .article {
     width: 80%;
     text-align: center;
