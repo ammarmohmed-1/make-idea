@@ -3,16 +3,18 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   list-style: none;
   text-decoration: none;
   color: #fff;
   line-height: 23px;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #03001C;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -145,12 +147,10 @@ header .up_header img {
 .who_are_we .article h1 {
   padding: 1rem 0rem;
 }
-.who_are_we .up-two {
-  background-color: #0f0946;
-}
 .who_are_we .up-two h1 {
   text-align: center;
   padding: 2rem 0rem;
+  font-size: 2rem;
 }
 .who_are_we .up-two .up-cards {
   width: 90%;
@@ -194,7 +194,6 @@ header .up_header img {
   background-size: cover;
 }
 .our_service .up_service {
-  width: 90%;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

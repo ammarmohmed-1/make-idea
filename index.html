@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
     <script defer src="script/main.js"></script>
+
+    <!-- animation libbery -->
+    <link rel="stylesheet" href="wow-js/animate.css">
+
     <title>MAKE IDEA</title>
 </head>
 <body dir="rtl">
     <!-- header -->
     <header>
-        <nav class="nav">
+        <nav class="nav wow fadeInDown">
             <div class="logo">
                 <img style="padding:10px 0rem; width:120px;height:auto;" src="images/logo/main_logo.png" alt="">
                 <div class="bar"><img style="width:40px; height:auto;" src="images/icon/menu.png" alt="botton"></div>
@@ -29,13 +33,13 @@
             <div class="article">
                 <h1> /.. make idea ../ </h1>
                 <h3>شركة رائدة ومتخصصة فى مجال البرمجيات وتصميم المواقع بكل انواعها</h3>
-                <a href="#"><img src="images/icon/scroll-down.png" alt=""></a>
+                <a style="transition: all 1s ;" href="#who_are_we"><img src="images/icon/scroll-down.png" alt=""></a>
             </div>
         </div>
     </header>
 
     <!-- who are we -->
-    <section class="who_are_we">
+    <section class="who_are_we" id="who_are_we">
         <h1 class="tittle">من نحن</h1>
         <div class="up">
             <img src="images/who we are-1.png" alt="">
@@ -55,19 +59,19 @@
         <div class="up-two">
             <h1>لماذا نحن</h1>
             <div class="up-cards">
-                <div class="card">
+                <div class="card  wow fadeInDown" data-wow-duration="1s">
                     <img src="images/icon/hacker.png" alt="haker">
                     <p>نعمل جاهدين على حمايه موقعك بحيث يكون امن وموثوق للزوار</p>
                 </div>
-                <div class="card">
+                <div class="card  wow fadeInDown" data-wow-duration="2s">
                     <img src="images/icon/seo.png" alt="seo">
                     <p>نعمل جاهدين على حمايه موقعك بحيث يكون امن وموثوق للزوار</p>
                 </div>
-                <div class="card">
+                <div class="card  wow fadeInDown" data-wow-duration="3s">
                     <img src="images/icon/design-thinking.png" alt="desing-thinking">
                     <p>نعمل جاهدين على حمايه موقعك بحيث يكون امن وموثوق للزوار</p>
                 </div>
-                <div class="card">
+                <div class="card  wow fadeInDown" data-wow-duration="4s">
                     <img src="images/icon/technical-support.png" alt="technical-support">
                     <p>نعمل جاهدين على حمايه موقعك بحيث يكون امن وموثوق للزوار</p>
                 </div>
@@ -80,37 +84,37 @@
         <h1 class="tittle"> خدماتنا </h1>
         <div class="up_service">
             <!-- one -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="1s" >
                 <img src="images/icon/uiux.png" alt="" class="icon">
                 <h1>تصميم UI/UX</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <!-- two -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="2s">
                 <img src="images/icon/web-desing.png" alt="" class="icon">
                 <h1>mogmeee</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <!-- three -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="3s">
                 <img src="images/icon/wordpress.png" alt="" class="icon">
                 <h1>mogmeee</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <!-- four -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="4s">
                 <img src="images/icon/shopify.png" alt="" class="icon">
                 <h1>mogmeee</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <!-- five -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="4s">
                 <img src="images/icon/seo.png" alt="" class="icon">
                 <h1>mogmeee</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <!-- six -->
-            <div class="card">
+            <div class="card  wow fadeInDown"  data-wow-duration="5s">
                 <img src="images/icon/logo.png" alt="" class="icon">
                 <h1>mogmeee</h1>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -125,7 +129,7 @@
         <h1 class="tittle">مراحل تنفيذ التصميم</h1>
         <div class="up_article">
             <div class="card">
-                <h1 class="num"><img src="images/icon/meeting.png" alt="meeting"></h1>
+            <h1 class="num"><img src="images/icon/meeting.png" alt="meeting"></h1>
                 <h3> نقوم بعمل اجتماع لمعرفه فكرة موقعك ومعرفه كافه التفاصيل</h3>
             </div>
             <div class="card">
@@ -145,14 +149,14 @@
 
     <footer>
         <div class="up-footer">
-            <div class="logo">
+            <div class="logo wow slideInRight" data-wow-delay="1s" >
                 <img src="images/logo/main_logo.png" alt="logo" >
             </div>
-            <div class="article">
+            <div class="article wow slideInRight" data-wow-delay="2s" >
                 <h1>make idea</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam maiores non ratione ullam dolorum mollitia deleniti maxime, corrupti, asperiores quae rem, consequatur itaque commodi! Quibusdam iure quisquam at consequuntur!</p>
             </div>
-            <div class="menu">
+            <div class="menu wow slideInRight" data-wow-delay="3s">
                 <ul>
                     <li><a href="#">الصفحة الرئسية</a></li>
                     <li><a href="#">من نحن</a></li>
@@ -162,7 +166,7 @@
                     <li><a href="#">طلب عرض السعر</a></li>
                 </ul>
             </div>
-            <div class="menu infromation">
+            <div class="menu infromation wow slideInRight" data-wow-delay="4.6s">
                 <h1>وسائل التواصل</h1>
                 <ul>
                     <li><a href="#">الصفحة الرئسية</a></li>
@@ -172,7 +176,10 @@
             
         </div>
         
-
     </footer>
 </body>
+<script src="wow-js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </html>

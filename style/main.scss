@@ -2,11 +2,12 @@
     padding:0px;
     margin:0px;
     box-sizing: border-box;
-    transition: all .3s;
+    transition: all .5s;
     list-style: none;
     text-decoration: none;
     color: #fff;
     line-height: 23px;
+    scroll-behavior: smooth;
 }
 @mixin grid($val){
     display: grid;
@@ -16,6 +17,7 @@
 
 body{
     background-color:#03001C;
+    overflow-x: hidden;
 }
 .btn{
     padding:10px 40px;
@@ -113,11 +115,10 @@ header{
         width: 50%;
     }
     .up-two{
-        
-        background-color: #0f0946;
         h1{
             text-align: center;
             padding: 2rem 0rem;
+            font-size: 2rem;
         }
         .up-cards{
             width: 90%;
@@ -158,14 +159,6 @@ header{
     background-size: cover;
 
     .up_service{
-        width: 90%;
-        // min-height: 100vh;
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
-        // margin: auto;
-        // gap: 1rem;
         @include grid(20rem);
         text-align: center;
         .card{
