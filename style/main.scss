@@ -183,8 +183,6 @@ header{
     }
 }
 
-
-
 .desing_stage{
     background-image:linear-gradient(right , #301e67d4, #5b8fb9dd) , url("../images/ds.jpg");
     background-position: center;
@@ -219,7 +217,6 @@ footer{
         min-height: 60vh;
         @include grid(15rem);
         align-items: center;
-
         .menu{
             li{
                 margin: .4rem 0rem;
@@ -232,7 +229,42 @@ footer{
             }
         }
     }
+    .infromation{
+        margin: auto;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                margin:30px;
+            }
+        }
+        a{
+            img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
 }
+
+.numbers_to_contact{
+    position:fixed;
+    bottom:50px;
+    left: 50px;
+    a{
+        background-color: #ff9100;
+        padding: .6rem;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        img{
+            width: 40px;
+            height: auto;
+        }
+    }
+}
+
 
 // responsve desing
 @media screen and (max-width: 903px){
