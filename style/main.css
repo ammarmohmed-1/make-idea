@@ -36,6 +36,44 @@ body {
   font-size: 2rem;
 }
 
+.contact-with-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #301E67;
+  height: 120vh;
+}
+.contact-with-us form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 50%;
+  max-width: 90%;
+}
+.contact-with-us form input, .contact-with-us form textarea {
+  color: #000;
+  height: 40px;
+  margin: 0.3rem;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 5px;
+}
+.contact-with-us form textarea {
+  height: 400px;
+  padding: 1rem;
+}
+
 header {
   min-height: 110vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 143, 185, 0.6117647059)), to(rgba(3, 0, 28, 0.6745098039))), url("../images/f.jpg");

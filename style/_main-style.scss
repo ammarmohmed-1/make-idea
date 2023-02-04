@@ -1,0 +1,38 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    transition: all .5s;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    line-height: 23px;
+    scroll-behavior: smooth;
+}
+@mixin grid($val){
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax($val , 1fr));
+    gap: 2rem;
+}
+
+body{
+    background-color:#03001C;
+    overflow-x: hidden;
+}
+.btn{
+    padding:10px 40px;
+    position: relative;
+    top: 40px;
+    border: solid 1px gold;
+    border-radius: 5px;
+    &:hover{
+        background-color: gold;
+        color: #03001C;
+        letter-spacing: 4px;
+    }
+}
+.tittle{
+    text-align: center;
+    padding: 3rem 0rem;
+    font-size: 2rem;
+}
