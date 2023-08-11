@@ -75,20 +75,20 @@ if (isset($_POST["send"])) {
                 <img class="icon_form" src="images/icon/close.png" alt="">
                 <div class="main-form">
                     <div>
-                        <h3>inter your first name </h3>
-                        <input type="text" name="first_name" placeholder="inter your first name">
+                        <h3>أدخل اسمك الأول</h3>
+                        <input type="text" name="first_name" placeholder="أدخل اسمك الأول" required>
                     </div>
                     <div>
-                        <h3>inter your last name</h3>
-                        <input type="text" name="last_name" placeholder="inter your last name" required>
+                        <h3>أدخل اسمك الأخير</h3>
+                        <input type="text" name="last_name" placeholder="أدخل اسمك الأخير" required>
                     </div>
                 </div>
                 <div>
-                    <h1>inter your email address</h1>
-                    <input type="email" name="email" placeholder="" required>
+                    <h1>أدخل عنوان بريدك الإلكتروني</h1>
+                    <input type="email" name="email" placeholder="أدخل عنوان بريدك الإلكتروني" required>
                 </div>
                 <div>
-                    <textarea name="massage" id="" rows="5" required></textarea>
+                    <textarea name="massage" placeholder="اشرح الموقع الذي تريد عمله بالتفصيل وارسل نماذج مشابهه له" rows="5" required></textarea>
                     <button class="btn btn_form" name="send" type="submit">send</button>
                 </div>
             </form>
