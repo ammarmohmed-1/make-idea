@@ -1,0 +1,454 @@
+@import "_main-style.scss";
+@import "_nav&header.scss";
+
+
+// style in who are we 
+.who_are_we{
+    min-height: 100vh;
+    background-image:linear-gradient( #16233773,#070232ca ) , url("../images/dd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 0rem 3rem;
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+    .article{
+        h1{
+            padding: 1rem 0rem;
+        }
+        width: 50%;
+    }
+
+}
+// style in ourservice
+.our_service{
+    min-height: 100vh;
+    background-image:linear-gradient(right , rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) , url("../images/serv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .up_service{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+        text-align: center;
+        margin: auto;
+        padding: 2rem 0rem;
+        .card{
+            background-color: #385f84;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            padding:0.5rem;
+            border-radius: 25px;
+            width: 40%;
+            height:auto;
+            box-shadow:10px 10px 10px #301E67;
+            &:hover{
+                transition: all .5s ease-in-out;
+                background-color: #03001C;
+            }
+            .art{
+                padding: .3rem .5rem;
+                width: 105%;
+                text-align: right;
+            }
+            img{
+                width: 60px;
+                height: auto;
+                margin-bottom: 30%;
+            }
+        }
+    }
+}
+// style in design stage
+.desing_stage{
+    .up_article{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        .main-img{
+            border-radius: 35px;
+            width: 100%;
+        }
+        .up-card{
+            display:flex;
+            flex-direction: column;
+            // width: 80%;
+            // border: #0dce17 3px solid;
+            .card{
+                margin: 1rem;
+                display: flex;
+                align-items:center; 
+                background-color: #5B8FB9;
+                border-radius: 10px;
+                width: 80%;
+                .num{
+                    padding: .3rem;
+                    margin: .9rem;
+                    background-color: #FF9100;
+                    border-radius: 5px;
+                    img{
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    // why we
+    .up-two{
+        h1{
+            text-align: center;
+            padding: 2rem 0rem;
+            font-size: 2rem;
+        }
+
+        .up-cards{
+            width: 100%;
+            min-height: 60vh;
+            align-items:center;
+            margin: auto;
+            @include grid(20rem);
+            text-align: center;
+            .card{
+                display: flex;
+                text-align: right;
+                background-color: #5B8FB9;
+                flex-direction: column;
+                padding:1rem 0rem;
+                margin:2rem auto;
+                border-radius: 5px;
+                width: 245px;
+                height: auto;
+                padding: .9rem;
+                h2{
+                    color: #201d1d;
+                }
+                &:hover{
+                    background-color: #050125;
+                    box-shadow:5px 10px 15px #301E67;
+                    transition: all .5s ;
+                    h2{
+                        color: #8bcbff;
+                    }
+                }
+                img{
+                    margin-top:-50px;
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+}
+
+// style in contact us 
+.contact-us{
+    padding:10rem 0rem;
+    height: 150vh;
+    padding: 5rem 0rem;
+    .massage{
+        position: fixed;
+        top: 20%;
+        padding: .5rem;
+        text-align: center;
+        width: 100%;
+        border-radius: 3px;
+        z-index: 999;
+        transition: all .5s ease-in-out;
+    }
+    .massage_none{
+        position: fixed;
+        top: -100%;
+    }
+    .massage_sucss{
+        background-color: #16c62e;
+        box-shadow: 5px 3px 9px #1aff00;
+    }
+    .massage_filed{
+        background-color: rgb(210, 25, 25);
+        box-shadow: 5px 3px 9px rgb(255, 0, 0);
+    }
+    .content{
+        position: relative; 
+        background-color:#385f84;
+        border-radius: 25px;
+        padding: 3rem 2rem;
+        width: 85%; height:auto;
+        min-height: 50vh;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .main-img{
+            width: 50%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text-content{
+            width: 50%;
+            h1{
+                font-size: 2rem;
+                margin: 1.5rem 0rem;
+                color: #FF9100;
+            }
+        }
+
+        // style the form
+        .form{
+            transition: all 1s ease-in-out;
+            background-color: #25496b;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            padding: 1rem ;
+            width: 90%;  height: auto;
+            overflow:auto;
+            position: fixed;
+            top: 5%;
+            right: 5%;
+            .icon_form{
+                position: absolute;
+                top: 2rem;
+                left: 1rem;
+                cursor: pointer;
+                width: 30px; height: auto;
+            }
+            input,textarea{
+                outline: none;
+                border: none;
+                color: #000;
+                font-weight: 700;
+                font-size: 1em;
+                border-radius: 5px;
+                padding: .2rem;
+                margin: 1rem 0rem;
+                width: 95%;
+            }
+            .btn{
+                margin-top: -20px;
+            }
+            .main-form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 98%;
+                div{
+                    width: 50%;
+                }
+            }
+        }
+        .form_close{
+            translate: all 1s ease-in-out;
+            position:fixed;
+            top: 100%;
+        }
+    }
+}
+// the infromation of contact
+.infromation{
+        max-width: 100%;
+        height: 200px;
+        width: 100%;
+        position: fixed;
+        top: 30%;  left: 1%;
+        z-index: 20;
+        width: 1%;
+        display: flex;
+        ul{
+            li{
+                display: inline;
+                a{
+                    img{
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+}
+// style in footer 
+footer{
+    margin: auto 0rem;
+    background-color: #0c0a11c5;
+    padding: .9rem;
+    // text-align: center;
+    .up-footer{
+        height: 60vh;
+        @include grid(15rem);
+        align-items: center;
+        .article{
+            max-width: 90%;
+            h1{
+                padding:1rem 0rem;
+            }
+        }
+        .menu{
+            li{
+                margin: .4rem 0rem;
+            }
+        }
+        .logo{
+            img{
+                width: 180px;
+                height: auto;
+            }
+        }
+    }
+}
+
+// this is number in whatsapp
+.numbers_to_contact{
+    position:fixed;
+    bottom:50px;
+    left: 50px;
+    a{
+        background-color: #0dce17;
+        padding: .5rem;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        img{
+            width: 30px;
+            height: auto;
+        }
+    }
+}
+
+
+// responsive design
+@media screen and (max-width: 903px){
+    // responsive design in who are we
+    .who_are_we{
+        .article{
+            width: 90%;
+            text-align: center;
+        }
+        .up{
+            img{
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px){
+    // responsve design in our service
+    .our_service{
+        .up_service{
+            .card{
+                width: 90%;
+            }
+        }
+    }
+    // style in design stage
+    .desing_stage{
+        .up_article{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .main-img{
+                width: 90%;
+            }
+            .up-card{
+                .card{
+                    width: 90%;
+                }
+            }
+        }
+        
+        // why we
+        .up-two{
+            h1{
+                text-align: center;
+                padding: 2rem 0rem;
+                font-size: 2rem;
+            }
+
+            .up-cards{
+                .card{
+                    display: flex;
+                    text-align: right;
+                    background-color: #5B8FB9;
+                    flex-direction: column;
+                    padding:1rem 0rem;
+                    margin:2rem auto;
+                    border-radius: 5px;
+                    width: 245px;
+                    height: auto;
+                    padding: .9rem;
+                    h2{
+                        color: #201d1d;
+                    }
+                    &:hover{
+                        background-color: #050125;
+                        box-shadow:5px 10px 15px #301E67;
+                        transition: all .5s ;
+                        h2{
+                            color: #8bcbff;
+                        }
+                    }
+                    img{
+                        margin-top:-50px;
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+
+    // responsive design in contact us
+    .contact-us{
+        .content{
+            flex-direction: column;
+            .main-img{
+                width: 100%;
+            }
+            .text-content{
+                width: 100%;
+            }
+        }
+        // style in form in start now 
+        .form{
+            input,textarea{
+                font-size: .7em;
+            }
+            .btn{
+                margin-top: -20px;
+            }
+            .main-form{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                input,h3{
+                    width: 195%;
+                }
+            }
+        }
+
+    }
+}

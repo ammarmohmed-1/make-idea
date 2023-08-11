@@ -1,0 +1,47 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    transition: all .5s;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+
+@mixin grid($val){
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax($val , 1fr));
+    gap: 2rem;
+}
+
+body{
+    background-color:#03001C;
+    max-width: 1440px;
+    margin: auto;
+    overflow-x: hidden;
+}
+.btn{
+    padding:10px 30px;
+    position: relative;
+    top: 40px;
+    border: solid 2px #ff9100;
+    color: #ff9100;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 15px;
+    &:hover{
+        background-color: #ff9100;
+        color: #4fbce0;
+        cursor: pointer;
+        letter-spacing: 1px;
+    }
+}
+.tittle{
+    text-align: center;
+    padding: 3rem 0rem;
+    font-size: 2rem;
+}
