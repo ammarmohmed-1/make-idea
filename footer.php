@@ -1,3 +1,13 @@
+        <!-- the infromation contact -->
+        <div class="infromation" dir="ltr">
+        <ul>
+            <li><a href="mailto:make00idea@gamil.com"><img src="images/icon/gmail.png" alt="gmail"></a></li>
+            <li><a href="tel:+201558891042"><img src="images/icon/phone.png" alt="phone"></a></li>
+            <!-- <li><a href="https://www.linkedin.com/in/make-idea-7b686a264/"><img src="images/icon/linkedin.png" alt="linked-in"></a></li> -->
+            <li><a href="https://www.facebook.com/profile.php?id=100089985401535&mibextid=ZbWKwL"><img src="images/icon/facebook.png" alt=""></a></li>
+            <!-- <li><a href="https://line.me/ti/p/XaoXOkSfN7"><img src="images/icon/line.png" alt=""></a></li> -->
+        </ul>
+    </div>
     <!-- footer -->
     <footer>
         <div class="up-footer">
@@ -29,7 +39,6 @@
     
     <!-- liberys -->
     <!--  this is vanilla tilt.js -->
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".tiled-libery"), {
             max: 25,
@@ -47,7 +56,6 @@
         duration:800,
     })
 </script>
-
 <script>
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
